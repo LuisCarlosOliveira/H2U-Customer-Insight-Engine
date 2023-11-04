@@ -1,65 +1,73 @@
 # H2U Hotel Customer Evaluation System
 
+## Table of Contents
+- [Overview](#overview)
+- [Learning Objectives](#learning-objectives)
+- [Problem Description](#problem-description)
+- [System Modules](#system-modules)
+  - [Data Ingestion Module](#data-ingestion-module)
+  - [Customer Segmentation Module](#customer-segmentation-module)
+  - [Statistics Module](#statistics-module)
+  - [Results](#results)
+- [Development Activities](#development-activities)
+- [Tools](#tools)
+- [Scrum and Agile Development](#scrum-and-agile-development)
+- [Team Members](#team-members)
+- [Setup and Running](#setup-and-running)
+- [License](#license)
+
+## Overview
+This repository contains the implementation of the H2U Hotel's customer evaluation application. The project's goal is to analyze customer behavior based on their purchasing history, demographic, and geographic information to enhance marketing strategies.
+
 ## Learning Objectives
-Upon completion of this project, students should have enhanced their ability to:
+By the end of this project, students will have improved their ability to:
 
-- Analyze a problem and identify requirements, business rules, and use cases.
+- Analyze problems to identify requirements, business rules, and use cases.
 - Specify and execute a readable set of test cases.
-- Distinguish between black-box and white-box testing (with identification of coverage) and choose appropriate tests for each use case.
-- Use agile development methodologies and support tools in software development.
-- Establish a mature development plan involving a team.
-- Regularly inspect code by identifying, collecting, and analyzing a specific set of metrics related to the quality of the software product, associated with other quality factors beyond system behavior.
+- Differentiate between black-box and white-box testing and choose appropriate tests for each use case.
+- Implement agile development methodologies and use support tools.
+- Establish a mature development plan involving a teamwork approach.
+- Inspect the code by identifying, collecting, and analyzing specific metrics related to the quality of the software product.
 
-## Software to be Developed
-The aim is to develop an application for evaluating customers based on the history of their purchases.
+## Problem Description
+The H2U Hotel has accumulated extensive data over three years of operation concerning customers' service acquisition practices, as well as geographical and demographic information. The software aims to structure this data and segment customers based on purchase regularity, total purchases, and monetization.
 
-### Description of the Problem
-The H2U Hotel has accumulated extensive information about customer behavior in terms of service acquisition practices, as well as geographic and demographic information, over three years of activity.
+## System Modules
 
-The Hotel Manager would like to better understand the different profiles of their customers to develop more efficient and targeted marketing strategies.
+### Data Ingestion Module
+The application imports CSV data into a predefined information model using OpenCSV.
 
-The challenge presented is to develop software capable of:
+### Customer Segmentation Module
+Customers are segmented based on purchase regularity, total number of transactions, and monetization value, with each factor being scored on a 1-4 scale.
 
-- Reading and structuring customer behavior data.
-- Segmenting customers based on indicators such as regularity of purchases, total purchases, and monetization of their purchases.
-- Assigning a score to each customer for each indicator.
-- Producing a set of statistics on customer behavior.
-
-### Modules
-1. **Data Ingestion Module**
-   - Import data according to a predefined information model using OpenCSV.
-2. **Customer Segmentation Modules**
-   - Calculate indicators for regularity, total purchases, and monetization.
-   - Assign scores to each customer based on these factors, divided into quartiles.
-3. **Statistics Module**
-   - Provide analysis on the seasonality of purchases, communication channels, and payment methods.
-   - Offer statistical analysis of the score indicators.
+### Statistics Module
+This module performs statistical analysis to provide insights into purchase seasonality, communication channels, and payment methods, among other metrics.
 
 ### Results
-- A JSON file with the scores of each indicator and statistics.
-- Verification of each result before writing to the final file.
+Outputs a JSON file with scores and statistics, ensuring results are verifiable before writing to the final file.
 
 ## Development Activities
-- Plan and monitor the project execution using agile methodologies, particularly SCRUM.
-- Create and manage all necessary artifacts associated with agile project management.
-- Establish software configuration management support mechanisms.
-- Document the analysis and specification of tests.
-- Collect and analyze a set of metrics related to software product quality.
+- Planning and monitoring project execution with SCRUM.
+- Creating and managing agile project management artifacts (backlogs, user stories, sprints, etc.).
+- Establishing Software Configuration Management support mechanisms.
+- Documenting test analysis and specification processes.
+- Collecting and analyzing software quality metrics.
 
 ## Tools
-- GitLab
-- Java
-- Gradle
-- jUnit
-- Jacoco
-- PMD
+- **Java**: Programming language for search engine development and test specification.
+- **Gradle**: Build configuration and automation tool.
+- **JUnit**: Framework for test coding.
+- **JaCoCo**: Code coverage analysis.
+- **PMD & Checkstyle**: Static code analysis.
+- **GitLab**: Version control and agile development support.
 
-## Development Process
-- The development was conducted using SCRUM methodologies, with the team successfully managing the development through issue tracking and agile boards. All project phases from planning to execution were completed, adhering to agile principles to ensure effective collaboration and project management.
+## Scrum and Agile Development
+The development process is based on SCRUM, with sprints reviewed and retrospectives performed during practical classes. Scrum Boards are used to organize tasks and monitor the implementation's progress.
 
 ## Team Members
 - Adão Henrique Sá Araújo
 - Luís Carlos Mendes de Oliveira ([GitHub](https://github.com/LuisCarlosOliveira))
 - Pedro Miguel Mota Marques
 - Rui Pedro Martins Teixeira
+
 
