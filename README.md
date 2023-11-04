@@ -1,38 +1,65 @@
-# ESII_Grupo_6
+# H2U Hotel Customer Evaluation System
 
+## Learning Objectives
+Upon completion of this project, students should have enhanced their ability to:
 
-**PROJETO PRATICO ENGENHARIA DE SOFTWARE II**
+- Analyze a problem and identify requirements, business rules, and use cases.
+- Specify and execute a readable set of test cases.
+- Distinguish between black-box and white-box testing (with identification of coverage) and choose appropriate tests for each use case.
+- Use agile development methodologies and support tools in software development.
+- Establish a mature development plan involving a team.
+- Regularly inspect code by identifying, collecting, and analyzing a specific set of metrics related to the quality of the software product, associated with other quality factors beyond system behavior.
 
-Aplicação para avaliação de clientes face ao histórico das suas compras.
+## Software to be Developed
+The aim is to develop an application for evaluating customers based on the history of their purchases.
 
+### Description of the Problem
+The H2U Hotel has accumulated extensive information about customer behavior in terms of service acquisition practices, as well as geographic and demographic information, over three years of activity.
 
-**Membros do Grupo 6**
+The Hotel Manager would like to better understand the different profiles of their customers to develop more efficient and targeted marketing strategies.
 
-- ADÃO HENRIQUE SÁ ARAÚJO @8210316
-- LUÍS CARLOS MENDES DE OLIVEIRA @8190370
-- PEDRO MIGUEL MOTA MARQUES @8180668
-- RUI PEDRO MARTINS TEIXEIRA @8180708
+The challenge presented is to develop software capable of:
 
-**Atividades desenvolvidas**
-1. Pleaneamento e acompanhamento da execução do projeto utilizando metodologias ágeis, em particular a
-metodologia SCRUM;
-2. Criação e gestão de todos os artefactos necessários e associados a uma gestão ágil do projeto ;
-3. Definição mecanismos de suporte às principais tarefas de Software Configuration
-Management. Por exemplo: controlo de versões, controlo de alterações, configuração de
-mecanismos de building, e auditorias;
-4. Documentação o processo de análise e especificação de testes;
-5. Recolha e analise de uum conjunto de métricas relacionadas com a qualidade do produto de
-software, no âmbito das atividades de inspeção de código.
+- Reading and structuring customer behavior data.
+- Segmenting customers based on indicators such as regularity of purchases, total purchases, and monetization of their purchases.
+- Assigning a score to each customer for each indicator.
+- Producing a set of statistics on customer behavior.
 
-**Link do Repositório**
+### Modules
+1. **Data Ingestion Module**
+   - Import data according to a predefined information model using OpenCSV.
+2. **Customer Segmentation Modules**
+   - Calculate indicators for regularity, total purchases, and monetization.
+   - Assign scores to each customer based on these factors, divided into quartiles.
+3. **Statistics Module**
+   - Provide analysis on the seasonality of purchases, communication channels, and payment methods.
+   - Offer statistical analysis of the score indicators.
 
-https://gitlab.estg.ipp.pt/esii_2022-23/esii_grupo_6/-/tree/main
+### Results
+- A JSON file with the scores of each indicator and statistics.
+- Verification of each result before writing to the final file.
 
+## Development Activities
+- Plan and monitor the project execution using agile methodologies, particularly SCRUM.
+- Create and manage all necessary artifacts associated with agile project management.
+- Establish software configuration management support mechanisms.
+- Document the analysis and specification of tests.
+- Collect and analyze a set of metrics related to software product quality.
 
-**GitLab**
+## Tools
+- GitLab
+- Java
+- Gradle
+- jUnit
+- Jacoco
+- PMD
 
-Usado para controlo de versões, definição de tarefas, definição de user stories.
+## Development Process
+- The development was conducted using SCRUM methodologies, with the team successfully managing the development through issue tracking and agile boards. All project phases from planning to execution were completed, adhering to agile principles to ensure effective collaboration and project management.
 
-**Wiki**
+## Team Members
+- Adão Henrique Sá Araújo
+- Luís Carlos Mendes de Oliveira ([GitHub](https://github.com/LuisCarlosOliveira))
+- Pedro Miguel Mota Marques
+- Rui Pedro Martins Teixeira
 
-https://gitlab.estg.ipp.pt/esii_2022-23/esii_grupo_6/-/wikis/home
